@@ -11,11 +11,7 @@
   </head>
 
   <body class="container">
-    <% if notice.present? %>
-      <p class="notice alert alert-success"><%= notice %></p>
-    <% elsif alert.present? %>
-      <p class="alert alert-warning"><%= alert %></p>
-    <% end %>
+    <%= display_notification %>
 
     <%= yield %>
   </body>
